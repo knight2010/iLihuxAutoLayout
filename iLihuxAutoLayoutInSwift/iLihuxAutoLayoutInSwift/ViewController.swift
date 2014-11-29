@@ -10,14 +10,33 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var kidLeftCenterConstrait: NSLayoutConstraint!
+    @IBOutlet var kidRightCenterConstrait: NSLayoutConstraint!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
+    @IBAction func didTapOnDoubiButton(sender: AnyObject)
+    {
+        self.kidLeftCenterConstrait.active = true
+        self.kidRightCenterConstrait.active = false
+        UIView.animateWithDuration(0.4, animations: { () -> Void in
+            self.view.layoutIfNeeded()
+        })
+    }
+
+    @IBAction func didTapOnWokaoButton(sender: AnyObject)
+    {
+        self.kidLeftCenterConstrait.active = false
+        self.kidRightCenterConstrait.active = true
+        UIView.animateWithDuration(0.4, animations: { () -> Void in
+            self.view.layoutIfNeeded()
+        })
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 
