@@ -1,6 +1,6 @@
 //
-//  iLihuxAutoLayoutTests.swift
-//  iLihuxAutoLayoutTests
+//  iLihuxAutoLayoutInSwiftTests.swift
+//  iLihuxAutoLayoutInSwiftTests
 //
 //  Created by lihux on 14/11/29.
 //  Copyright (c) 2014年 lihux. All rights reserved.
@@ -9,7 +9,7 @@
 import UIKit
 import XCTest
 
-class iLihuxAutoLayoutTests: XCTestCase {
+class iLihuxAutoLayoutInSwiftTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

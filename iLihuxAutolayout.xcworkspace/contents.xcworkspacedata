@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:iLihuxAutoLayout/iLihuxAutoLayoutInSwift.xcodeproj">
+      location = "group:iLihuxAutoLayoutInSwift/iLihuxAutoLayoutInSwift.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:iLihuxAutoLayoutInOC/iLihuxAutoLayoutInOC.xcodeproj">
    </FileRef>
 </Workspace>
