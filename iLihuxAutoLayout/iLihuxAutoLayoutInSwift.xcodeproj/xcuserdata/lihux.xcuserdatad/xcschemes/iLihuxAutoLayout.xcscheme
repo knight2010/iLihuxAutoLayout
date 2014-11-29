@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6D55F5B81A295542004C7595"
-               BuildableName = "iLihuxAutoLayout.app"
-               BlueprintName = "iLihuxAutoLayout"
-               ReferencedContainer = "container:iLihuxAutoLayout.xcodeproj">
+               BuildableName = "iLihuxAutoLayoutInSwift.app"
+               BlueprintName = "iLihuxAutoLayoutInSwift"
+               ReferencedContainer = "container:iLihuxAutoLayoutInSwift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6D55F5CD1A295542004C7595"
-               BuildableName = "iLihuxAutoLayoutTests.xctest"
-               BlueprintName = "iLihuxAutoLayoutTests"
-               ReferencedContainer = "container:iLihuxAutoLayout.xcodeproj">
+               BuildableName = "iLihuxAutoLayoutInSwiftTests.xctest"
+               BlueprintName = "iLihuxAutoLayoutInSwiftTests"
+               ReferencedContainer = "container:iLihuxAutoLayoutInSwift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6D55F5CD1A295542004C7595"
-               BuildableName = "iLihuxAutoLayoutTests.xctest"
-               BlueprintName = "iLihuxAutoLayoutTests"
-               ReferencedContainer = "container:iLihuxAutoLayout.xcodeproj">
+               BuildableName = "iLihuxAutoLayoutInSwiftTests.xctest"
+               BlueprintName = "iLihuxAutoLayoutInSwiftTests"
+               ReferencedContainer = "container:iLihuxAutoLayoutInSwift.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6D55F5B81A295542004C7595"
-            BuildableName = "iLihuxAutoLayout.app"
-            BlueprintName = "iLihuxAutoLayout"
-            ReferencedContainer = "container:iLihuxAutoLayout.xcodeproj">
+            BuildableName = "iLihuxAutoLayoutInSwift.app"
+            BlueprintName = "iLihuxAutoLayoutInSwift"
+            ReferencedContainer = "container:iLihuxAutoLayoutInSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6D55F5B81A295542004C7595"
-            BuildableName = "iLihuxAutoLayout.app"
-            BlueprintName = "iLihuxAutoLayout"
-            ReferencedContainer = "container:iLihuxAutoLayout.xcodeproj">
+            BuildableName = "iLihuxAutoLayoutInSwift.app"
+            BlueprintName = "iLihuxAutoLayoutInSwift"
+            ReferencedContainer = "container:iLihuxAutoLayoutInSwift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6D55F5B81A295542004C7595"
-            BuildableName = "iLihuxAutoLayout.app"
-            BlueprintName = "iLihuxAutoLayout"
-            ReferencedContainer = "container:iLihuxAutoLayout.xcodeproj">
+            BuildableName = "iLihuxAutoLayoutInSwift.app"
+            BlueprintName = "iLihuxAutoLayoutInSwift"
+            ReferencedContainer = "container:iLihuxAutoLayoutInSwift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -26,14 +26,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6D55F5B91A295542004C7595 /* iLihuxAutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLihuxAutoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D55F5B91A295542004C7595 /* iLihuxAutoLayoutInSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLihuxAutoLayoutInSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D55F5BD1A295542004C7595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D55F5BE1A295542004C7595 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D55F5C01A295542004C7595 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6D55F5C31A295542004C7595 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6D55F5C51A295542004C7595 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6D55F5C81A295542004C7595 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		6D55F5CE1A295542004C7595 /* iLihuxAutoLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iLihuxAutoLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D55F5CE1A295542004C7595 /* iLihuxAutoLayoutInSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iLihuxAutoLayoutInSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D55F5D31A295542004C7595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D55F5D41A295542004C7595 /* iLihuxAutoLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iLihuxAutoLayoutTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,8 +68,8 @@
 		6D55F5BA1A295542004C7595 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6D55F5B91A295542004C7595 /* iLihuxAutoLayout.app */,
-				6D55F5CE1A295542004C7595 /* iLihuxAutoLayoutTests.xctest */,
+				6D55F5B91A295542004C7595 /* iLihuxAutoLayoutInSwift.app */,
+				6D55F5CE1A295542004C7595 /* iLihuxAutoLayoutInSwiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,9 +115,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6D55F5B81A295542004C7595 /* iLihuxAutoLayout */ = {
+		6D55F5B81A295542004C7595 /* iLihuxAutoLayoutInSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6D55F5D81A295542004C7595 /* Build configuration list for PBXNativeTarget "iLihuxAutoLayout" */;
+			buildConfigurationList = 6D55F5D81A295542004C7595 /* Build configuration list for PBXNativeTarget "iLihuxAutoLayoutInSwift" */;
 			buildPhases = (
 				6D55F5B51A295542004C7595 /* Sources */,
 				6D55F5B61A295542004C7595 /* Frameworks */,
@@ -127,14 +127,14 @@
 			);
 			dependencies = (
 			);
-			name = iLihuxAutoLayout;
+			name = iLihuxAutoLayoutInSwift;
 			productName = iLihuxAutoLayout;
-			productReference = 6D55F5B91A295542004C7595 /* iLihuxAutoLayout.app */;
+			productReference = 6D55F5B91A295542004C7595 /* iLihuxAutoLayoutInSwift.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6D55F5CD1A295542004C7595 /* iLihuxAutoLayoutTests */ = {
+		6D55F5CD1A295542004C7595 /* iLihuxAutoLayoutInSwiftTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6D55F5DB1A295542004C7595 /* Build configuration list for PBXNativeTarget "iLihuxAutoLayoutTests" */;
+			buildConfigurationList = 6D55F5DB1A295542004C7595 /* Build configuration list for PBXNativeTarget "iLihuxAutoLayoutInSwiftTests" */;
 			buildPhases = (
 				6D55F5CA1A295542004C7595 /* Sources */,
 				6D55F5CB1A295542004C7595 /* Frameworks */,
@@ -145,9 +145,9 @@
 			dependencies = (
 				6D55F5D01A295542004C7595 /* PBXTargetDependency */,
 			);
-			name = iLihuxAutoLayoutTests;
+			name = iLihuxAutoLayoutInSwiftTests;
 			productName = iLihuxAutoLayoutTests;
-			productReference = 6D55F5CE1A295542004C7595 /* iLihuxAutoLayoutTests.xctest */;
+			productReference = 6D55F5CE1A295542004C7595 /* iLihuxAutoLayoutInSwiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -168,7 +168,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6D55F5B41A295542004C7595 /* Build configuration list for PBXProject "iLihuxAutoLayout" */;
+			buildConfigurationList = 6D55F5B41A295542004C7595 /* Build configuration list for PBXProject "iLihuxAutoLayoutInSwift" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -181,8 +181,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6D55F5B81A295542004C7595 /* iLihuxAutoLayout */,
-				6D55F5CD1A295542004C7595 /* iLihuxAutoLayoutTests */,
+				6D55F5B81A295542004C7595 /* iLihuxAutoLayoutInSwift */,
+				6D55F5CD1A295542004C7595 /* iLihuxAutoLayoutInSwiftTests */,
 			);
 		};
 /* End PBXProject section */
@@ -230,7 +230,7 @@
 /* Begin PBXTargetDependency section */
 		6D55F5D01A295542004C7595 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6D55F5B81A295542004C7595 /* iLihuxAutoLayout */;
+			target = 6D55F5B81A295542004C7595 /* iLihuxAutoLayoutInSwift */;
 			targetProxy = 6D55F5CF1A295542004C7595 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -338,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iLihuxAutoLayout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iLihuxAutoLayoutInSwift;
 			};
 			name = Debug;
 		};
@@ -348,7 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iLihuxAutoLayout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iLihuxAutoLayoutInSwift;
 			};
 			name = Release;
 		};
@@ -366,7 +366,7 @@
 				);
 				INFOPLIST_FILE = iLihuxAutoLayoutTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iLihuxAutoLayoutInSwiftTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iLihuxAutoLayout.app/iLihuxAutoLayout";
 			};
 			name = Debug;
@@ -381,7 +381,7 @@
 				);
 				INFOPLIST_FILE = iLihuxAutoLayoutTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iLihuxAutoLayoutInSwiftTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iLihuxAutoLayout.app/iLihuxAutoLayout";
 			};
 			name = Release;
@@ -389,7 +389,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6D55F5B41A295542004C7595 /* Build configuration list for PBXProject "iLihuxAutoLayout" */ = {
+		6D55F5B41A295542004C7595 /* Build configuration list for PBXProject "iLihuxAutoLayoutInSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6D55F5D61A295542004C7595 /* Debug */,
@@ -398,7 +398,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6D55F5D81A295542004C7595 /* Build configuration list for PBXNativeTarget "iLihuxAutoLayout" */ = {
+		6D55F5D81A295542004C7595 /* Build configuration list for PBXNativeTarget "iLihuxAutoLayoutInSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6D55F5D91A295542004C7595 /* Debug */,
@@ -406,7 +406,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		6D55F5DB1A295542004C7595 /* Build configuration list for PBXNativeTarget "iLihuxAutoLayoutTests" */ = {
+		6D55F5DB1A295542004C7595 /* Build configuration list for PBXNativeTarget "iLihuxAutoLayoutInSwiftTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6D55F5DC1A295542004C7595 /* Debug */,
