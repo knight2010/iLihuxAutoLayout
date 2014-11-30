@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EGF-MH-nLs">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
@@ -27,7 +28,7 @@
         <!--场景一：动画-->
         <scene sceneID="EfM-tL-FNq">
             <objects>
-                <viewController title="场景一：动画" id="O4Y-zq-IXn" sceneMemberID="viewController">
+                <viewController title="场景一：动画" id="O4Y-zq-IXn" customClass="LHViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZtC-TO-LfV"/>
                         <viewControllerLayoutGuide type="bottom" id="zku-Ci-Nsf"/>
@@ -48,6 +49,14 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapOnDouBiButton:" destination="O4Y-zq-IXn" eventType="touchUpInside" id="ipz-jU-UcE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kes-vC-JLF">
                                 <rect key="frame" x="206" y="313" width="116" height="41"/>
@@ -61,6 +70,14 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapOnFuckButton:" destination="O4Y-zq-IXn" eventType="touchUpInside" id="axT-Oj-8We"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oCq-B2-v1q">
                                 <rect key="frame" x="187" y="299" width="1" height="70"/>
@@ -91,9 +108,14 @@
                             <constraint firstAttribute="centerX" secondItem="oCq-B2-v1q" secondAttribute="centerX" id="xHv-8u-l1P"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="YRo-Le-KIm"/>
+                    <navigationItem key="navigationItem" title="场景1：动画" id="YRo-Le-KIm"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="douBi" destination="TnN-tT-sWw" id="IaC-au-F44"/>
+                        <outlet property="kidLeftCenterConstraint" destination="weK-zy-nhw" id="cnF-Hk-c1s"/>
+                        <outlet property="kidRightCenterConstraint" destination="WnF-Dk-x50" id="pSJ-Lh-O9M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eiA-2Q-eOV" sceneMemberID="firstResponder"/>
             </objects>
