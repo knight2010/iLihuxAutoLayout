@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D20C3461A2AB243009408DB /* LHSceneTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D20C3451A2AB243009408DB /* LHSceneTwoViewController.m */; };
+		6D20C3501A2ACED4009408DB /* LHTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D20C34F1A2ACED4009408DB /* LHTableViewCell.m */; };
 		6D3632341A29590000976126 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3632331A29590000976126 /* main.m */; };
 		6D3632371A29590000976126 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3632361A29590000976126 /* AppDelegate.m */; };
 		6D36323A1A29590000976126 /* LHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3632391A29590000976126 /* LHViewController.m */; };
@@ -28,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D20C3441A2AB243009408DB /* LHSceneTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHSceneTwoViewController.h; sourceTree = "<group>"; };
+		6D20C3451A2AB243009408DB /* LHSceneTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHSceneTwoViewController.m; sourceTree = "<group>"; };
+		6D20C34E1A2ACED4009408DB /* LHTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHTableViewCell.h; sourceTree = "<group>"; };
+		6D20C34F1A2ACED4009408DB /* LHTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHTableViewCell.m; sourceTree = "<group>"; };
 		6D36322E1A29590000976126 /* iLihuxAutoLayoutInOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLihuxAutoLayoutInOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D3632321A29590000976126 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D3632331A29590000976126 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -87,6 +93,10 @@
 				6D3632361A29590000976126 /* AppDelegate.m */,
 				6D3632381A29590000976126 /* LHViewController.h */,
 				6D3632391A29590000976126 /* LHViewController.m */,
+				6D20C3441A2AB243009408DB /* LHSceneTwoViewController.h */,
+				6D20C3451A2AB243009408DB /* LHSceneTwoViewController.m */,
+				6D20C34E1A2ACED4009408DB /* LHTableViewCell.h */,
+				6D20C34F1A2ACED4009408DB /* LHTableViewCell.m */,
 				6D36323B1A29590000976126 /* Main.storyboard */,
 				6D36323E1A29590000976126 /* Images.xcassets */,
 				6D3632401A29590000976126 /* LaunchScreen.xib */,
@@ -223,6 +233,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D20C3461A2AB243009408DB /* LHSceneTwoViewController.m in Sources */,
+				6D20C3501A2ACED4009408DB /* LHTableViewCell.m in Sources */,
 				6D36323A1A29590000976126 /* LHViewController.m in Sources */,
 				6D3632371A29590000976126 /* AppDelegate.m in Sources */,
 				6D3632341A29590000976126 /* main.m in Sources */,

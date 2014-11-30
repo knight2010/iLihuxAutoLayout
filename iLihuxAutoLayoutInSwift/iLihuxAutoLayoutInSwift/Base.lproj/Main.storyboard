@@ -3,6 +3,7 @@
     <dependencies>
         <deployment version="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--场景一：动画-->
@@ -74,13 +75,35 @@
                                     <constraint firstAttribute="width" constant="64" id="yhS-MJ-vV6"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOV-AW-HuL">
+                                <rect key="frame" x="133" y="227" width="108" height="38"/>
+                                <color key="backgroundColor" red="0.19499686718801768" green="1" blue="0.33852616611840458" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="Ler-jJ-77o"/>
+                                    <constraint firstAttribute="width" constant="108" id="w82-bn-wsC"/>
+                                </constraints>
+                                <state key="normal" title="下一个场景">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRaidus">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="u9z-jX-ppu" kind="show" id="Roi-vg-JJy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="H3g-x5-8ft" firstAttribute="top" secondItem="YOV-AW-HuL" secondAttribute="bottom" constant="48" id="5n9-iM-c38"/>
                             <constraint firstItem="8Vl-Ul-hxH" firstAttribute="centerX" secondItem="H3g-x5-8ft" secondAttribute="centerX" id="BJ5-Bo-j5I"/>
                             <constraint firstItem="H3g-x5-8ft" firstAttribute="leading" secondItem="aVW-sc-zUM" secondAttribute="trailing" constant="18" id="E1z-po-InK"/>
                             <constraint firstItem="8Vl-Ul-hxH" firstAttribute="centerX" secondItem="R1C-GU-LaX" secondAttribute="centerX" priority="900" id="MTU-I4-5dR"/>
                             <constraint firstItem="aVW-sc-zUM" firstAttribute="leading" secondItem="R1C-GU-LaX" secondAttribute="trailing" constant="18" id="PgI-b0-Xxc"/>
+                            <constraint firstAttribute="centerX" secondItem="YOV-AW-HuL" secondAttribute="centerX" id="RdL-Zn-Gg2"/>
                             <constraint firstItem="8Vl-Ul-hxH" firstAttribute="top" secondItem="R1C-GU-LaX" secondAttribute="bottom" constant="34" id="Zm6-J7-y8p"/>
                             <constraint firstAttribute="centerX" secondItem="aVW-sc-zUM" secondAttribute="centerX" id="ocT-FK-cpe"/>
                             <constraint firstAttribute="centerY" secondItem="H3g-x5-8ft" secondAttribute="centerY" id="pff-F0-6n0"/>
@@ -100,6 +123,139 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="971.5" y="268.5"/>
+        </scene>
+        <!--场景2：手动添加约束-->
+        <scene sceneID="1jf-hJ-Yqi">
+            <objects>
+                <viewController title="场景2：手动添加约束" id="u9z-jX-ppu" customClass="LHSceneTwoViewControllerSwift" customModule="iLihuxAutoLayoutInSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pYj-Yt-vFd"/>
+                        <viewControllerLayoutGuide type="bottom" id="lTE-od-xzG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AoG-LW-IZH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nAh-Qz-e6u" userLabel="background View">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty" translatesAutoresizingMaskIntoConstraints="NO" id="0cB-QC-0OP">
+                                        <rect key="frame" x="171" y="88" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="RO1-7s-2hm"/>
+                                            <constraint firstAttribute="height" constant="32" id="tVP-a9-6KJ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DouBi 都被你删光了哦" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzF-9F-2KC">
+                                        <rect key="frame" x="99" y="147" width="176" height="23"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="176" id="bug-qh-5gv"/>
+                                            <constraint firstAttribute="height" constant="23" id="zhS-VZ-hw8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="yzF-9F-2KC" secondAttribute="centerX" id="Ch7-E5-jxK"/>
+                                    <constraint firstAttribute="centerX" secondItem="0cB-QC-0OP" secondAttribute="centerX" id="YV4-cn-Wz3"/>
+                                    <constraint firstItem="yzF-9F-2KC" firstAttribute="top" secondItem="0cB-QC-0OP" secondAttribute="bottom" constant="27" id="Yca-uW-OVH"/>
+                                    <constraint firstItem="0cB-QC-0OP" firstAttribute="top" secondItem="nAh-Qz-e6u" secondAttribute="top" constant="88" id="xBc-oZ-tJ1"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="90" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="dzx-3k-hOM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="doubi" id="Zcw-nG-UzM" customClass="LHTableViewCell" customModule="iLihuxAutoLayoutInSwift" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zcw-nG-UzM" id="e3Y-NA-aNv">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3J5-fX-cf3" userLabel="bottom line View">
+                                                    <rect key="frame" x="0.0" y="89" width="375" height="1"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="fnU-U3-JLg"/>
+                                                    </constraints>
+                                                </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doubi" translatesAutoresizingMaskIntoConstraints="NO" id="NGo-wp-v6x">
+                                                    <rect key="frame" x="10" y="10" width="70" height="70"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="70" id="VCv-q1-ab1"/>
+                                                        <constraint firstAttribute="width" constant="70" id="lSL-Mg-tAC"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="127-8v-gG5">
+                                                    <rect key="frame" x="308" y="21" width="45" height="48"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="48" id="ScY-GU-Fvn"/>
+                                                        <constraint firstAttribute="width" constant="45" id="sz3-95-F0V"/>
+                                                    </constraints>
+                                                    <state key="normal" image="delete">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="didTapOnCancelButton:" destination="Zcw-nG-UzM" eventType="touchUpInside" id="mw2-Vp-iXh"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.08235294118" green="0.52156862749999999" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="NGo-wp-v6x" firstAttribute="leading" secondItem="e3Y-NA-aNv" secondAttribute="leading" constant="10" id="KQA-dO-0wR"/>
+                                                <constraint firstItem="127-8v-gG5" firstAttribute="top" secondItem="e3Y-NA-aNv" secondAttribute="top" constant="21" id="PxQ-0c-joP"/>
+                                                <constraint firstItem="3J5-fX-cf3" firstAttribute="leading" secondItem="e3Y-NA-aNv" secondAttribute="leadingMargin" constant="-8" id="fSX-Fj-MQg"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="3J5-fX-cf3" secondAttribute="trailing" constant="-8" id="n7F-Hk-i6u"/>
+                                                <constraint firstAttribute="trailing" secondItem="127-8v-gG5" secondAttribute="trailing" constant="22" id="oQr-xW-Sv2"/>
+                                                <constraint firstItem="NGo-wp-v6x" firstAttribute="top" secondItem="e3Y-NA-aNv" secondAttribute="top" constant="10" id="qgJ-OQ-4t1"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="3J5-fX-cf3" secondAttribute="bottom" constant="-8" id="usT-Ze-rAM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="u9z-jX-ppu" id="E4i-a1-llV"/>
+                                    <outlet property="delegate" destination="u9z-jX-ppu" id="hAt-my-VGC"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dzx-3k-hOM" secondAttribute="trailing" id="5fo-qi-dKq"/>
+                            <constraint firstItem="nAh-Qz-e6u" firstAttribute="top" secondItem="pYj-Yt-vFd" secondAttribute="bottom" id="JUo-Si-5Ks"/>
+                            <constraint firstItem="nAh-Qz-e6u" firstAttribute="width" secondItem="dzx-3k-hOM" secondAttribute="width" id="UBJ-GM-Hsu"/>
+                            <constraint firstItem="lTE-od-xzG" firstAttribute="top" secondItem="nAh-Qz-e6u" secondAttribute="bottom" id="cLb-6I-q6Q"/>
+                            <constraint firstItem="dzx-3k-hOM" firstAttribute="leading" secondItem="AoG-LW-IZH" secondAttribute="leading" id="oev-Bs-75y"/>
+                            <constraint firstItem="nAh-Qz-e6u" firstAttribute="height" secondItem="dzx-3k-hOM" secondAttribute="height" id="qHv-68-j0h"/>
+                            <constraint firstItem="lTE-od-xzG" firstAttribute="top" secondItem="dzx-3k-hOM" secondAttribute="bottom" id="qh9-Ck-tPZ"/>
+                            <constraint firstItem="nAh-Qz-e6u" firstAttribute="leading" secondItem="AoG-LW-IZH" secondAttribute="leading" id="rng-SQ-aUh"/>
+                            <constraint firstAttribute="trailing" secondItem="nAh-Qz-e6u" secondAttribute="trailing" id="tFv-rR-sfv"/>
+                            <constraint firstItem="dzx-3k-hOM" firstAttribute="top" secondItem="AoG-LW-IZH" secondAttribute="top" id="zpr-q2-wko"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="UBJ-GM-Hsu"/>
+                                <exclude reference="qHv-68-j0h"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" title="场景2：代码创建约束" id="atX-CJ-M81">
+                        <barButtonItem key="backBarButtonItem" title="返回" id="ktv-lh-8nX"/>
+                    </navigationItem>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="emptyView" destination="nAh-Qz-e6u" id="aWf-15-kki"/>
+                        <outlet property="tableView" destination="dzx-3k-hOM" id="DK3-pL-p6a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P4c-Sj-Fxc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1404.5" y="267.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nsI-1A-cmH">
@@ -123,6 +279,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="delete" width="45" height="47"/>
         <image name="doubi" width="64" height="64"/>
+        <image name="empty" width="32" height="32"/>
     </resources>
 </document>
